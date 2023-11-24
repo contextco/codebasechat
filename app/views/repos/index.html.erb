@@ -11,7 +11,7 @@
   </div>
   <div class="p-16">
     <div class="flex items-center flex-col gap-8 justify-center">
-      <div class="grid grid-cols-12 max-w-7xl gap-16">
+      <div class="grid grid-cols-12 max-w-7xl gap-16 justify-center">
         <div class="flex flex-col gap-8 shrink xl:col-span-5 col-span-12">
           <div class="text-6xl max-w-xl noto-serif">
             <div class="mb-2 font-semibold">
@@ -72,9 +72,13 @@
           </div>
 
           <div class="first flex gap-8  items-baseline">
-            <div class="rounded-full bg-slate-100 w-10 h-10 flex text-slate-600 items-center justify-center font-semibold text-lg">2</div>
+            <div class="rounded-full bg-slate-100 w-10 h-10 flex text-slate-600 items-center justify-center font-semibold text-lg shrink-0">2</div>
             <div class="col-span-11 flex flex-col gap-4">
               <div class="text-2xl">Upload your GPT codebase file:</div>
+
+              <div class="text-sm prose text-slate-300">You will receive an email with a link to a file <span class="font-mono p-1 bg-slate-500  rounded ">repo.md</span>. You can upload that file to OpenAI to create your custom codebase GPT.</div>
+
+              <%= image_tag 'screenshot.png', class: 'rounded border-slate-500 shadow pr-8' %>
             </div>
           </div>
         </div>
