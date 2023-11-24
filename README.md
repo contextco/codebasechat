@@ -3,7 +3,7 @@ _Made in London by [Context.ai](https://context.ai?utm_source=codebasechat&utm_m
 
 Create a GPT chatbot for any GitHub Repo in just 30 Seconds!
 
-![Screenshot of chatbot](https://i.ibb.co/WtCPR4N/gpt.png)
+[![gpt-screenshot](https://github.com/contextco/codebasechat/assets/146003115/8bf289e4-4529-4e06-969d-2b710ed169d5)](https://chat.openai.com/g/g-6eEQn0yBn-chat-with-my-codebase)
 
 We built a GPT for this very repo! Ask it about CodebaseChat.
 
@@ -22,4 +22,4 @@ Have an idea for improving this project? Feel free to send us a PR!
 ## Chatbot Analytics
 If you're building a conversational AI or LLM product, you'll want to have analytics. [Context.ai](https://context.ai?utm_source=codebasechat&utm_medium=github) can help you understand user behavior and track LLM performance. It takes < 30 mins to set up and start generating product insights. To learn more, request a demo at [Context.ai/demo](https://context.ai/demo?utm_source=codebasechat&utm_medium=github).
 
-![Context.ai Logo](https://i.ibb.co/cYSNypB/logo-color.png)
+[![logo-color](https://github.com/contextco/codebasechat/assets/146003115/d6dd0e31-6453-4785-905d-a64f73c2e236)](https://context.ai?utm_source=codebasechat&utm_medium=github)
