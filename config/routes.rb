@@ -1,4 +1,8 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
+  mount Sidekiq::Web => "/sidekiq"
+
   resources :repos, only: [:index] do
     collection do
       post :action
