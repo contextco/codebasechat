@@ -38,3 +38,4 @@
 !/app/assets/builds/.keep
 
 .DS_Store
+.idea

@@ -61,6 +61,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "letter_opener"
 end
 
 group :test do
@@ -76,5 +77,7 @@ gem "aws-sdk-s3", "~> 1.139"
 gem "heroicon", "~> 1.0"
 
 gem 'pg'
+gem 'postmark-rails'
+
 
 gem "sidekiq", "~> 7.2"

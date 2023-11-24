@@ -2,5 +2,16 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/05879b2e62f4c2b21641" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/307ddf5cd26aae6700cc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/328c47577f241af8ac6e" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/3f1e86063fb997e7cb60" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/5cebb9aeb4f63b2ecce6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/76568a22b1fa44f2dcfc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/80580225a7e01d6d15a3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/9e09404a1e2bbde78954" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/a5d7c0c9f5c63e7c4f18" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/b00ebe568ad91ee62385" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/e9a1302d3d4bb1ee7efa" vcs="Git" />
   </component>
 </project>

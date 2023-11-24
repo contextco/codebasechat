@@ -4,5 +4,7 @@ class ProcessRepoJob < ApplicationJob
   def perform(repo, *args)
     file = Clone.new(repo.url).file_from_repo
     repo.indexed_repo_file.attach(io: file, filename: 'repo.md')
+
+    RepoMailer.repo_created(repo).deliver_later
   end
 end
