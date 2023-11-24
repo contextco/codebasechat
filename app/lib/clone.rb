@@ -36,6 +36,7 @@ class Clone
   def generate_files
     repo = Git.clone(@repo, @directory)
 
+    readme = nil
     files = []
 
     # Iterate through all files in the repository
@@ -43,8 +44,15 @@ class Clone
       next if File.directory?(file)
       next unless allowed_extensions.include?(File.extname(file))
 
+      if File.basename(file).downcase == 'readme.md'
+        readme = FILE.new(file.delete_prefix(@randomdir), File.read(file))
+        next
+      end
+
       files << FILE.new(file.delete_prefix(@randomdir), File.read(file))
     end
+
+    files.prepend(readme) if readme
 
     FileUtils.rm_rf(@directory)
 
