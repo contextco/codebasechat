@@ -22,10 +22,10 @@ class Clone
     f = StringIO.new
 
     files.each do |file|
-      f << "## #{file.path}\n"
-      f << "```"
-      f << file.content
+      f << "## #{file.path}\n\n"
       f << "```\n"
+      f << file.content
+      f << "```\n\n\n"
     end
 
     f.rewind
