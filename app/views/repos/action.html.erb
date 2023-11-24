@@ -1,0 +1,14 @@
+<%= turbo_frame_tag 'result' do %>
+  <% if @errors.nil? %>
+    <div class="flex items-center gap-2">
+      <%= heroicon 'check-circle', variant: :outline, options: { class: 'w-8 h-8'} %>
+      <span class="">
+        <div class="font-semibold">Success!</div>
+        <div class="text-slate-400 text-xs">
+        Your indexed repo is being processed and wil be emailed to you shortly.
+        </div>
+      </span>
+    </div>
+  <% else %>
+  <% end %>
+<% end %>

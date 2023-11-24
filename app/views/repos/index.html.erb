@@ -1,0 +1,89 @@
+<div class="w-full min-h-screen bg-slate-800 text-slate-200">
+  <div class="w-full p-2 flex items-center justify-center bg-slate-700 gap-2 font-semibold border-b border-slate-500">
+    Made by
+    <div class="h-5">
+      <%= image_tag 'logo_white.png', class: 'h-full' %>
+    </div>
+  </div>
+  <div class="py-4 font-bold noto-serif text-lg max-w-6xl mx-auto">
+    CodebaseChat
+  </div>
+  <div class="p-16">
+    <div class="flex items-center flex-col gap-8 justify-center">
+      <div class="grid grid-cols-12 max-w-7xl gap-16">
+        <div class="flex flex-col gap-8 shrink xl:col-span-5 col-span-12">
+          <div class="text-6xl max-w-xl noto-serif">
+            <div class="mb-2 font-semibold">
+              Create a GPT for your Github repository in
+            </div>
+            <div class="relative inline-block group">
+              <div class="relative z-10 font-semibold text-slate-800 p-2">30 seconds</div>
+              <div class="top-0 absolute bg-white w-full h-full -rotate-1 group-hover:rotate-2 duration-200 transition-all"></div>
+            </div>
+
+          </div>
+          <div class="flex flex-col rounded gap-4">
+            <div class="font-semibold text-slate-400">
+              Every major programming language supported:
+            </div>
+
+            <div class="text-slate-300 text-4xl gap-8 flex items-center">
+              <i class="highlight devicon-c-plain"></i>
+              <i class="highlight devicon-python-plain"></i>
+              <i class="highlight devicon-javascript-plain"></i>
+              <i class="highlight devicon-ruby-plain"></i>
+              <i class="highlight devicon-go-plain"></i>
+              <i class="highlight devicon-java-plain"></i>
+              <div class="plus text-sm">...and more</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps max-w-4xl col-span-12 xl:col-span-7 w-full flex flex-col gap-8 p-8 rounded bg-slate-700 shadow border border-slate-600">
+          <div class="first flex gap-8 items-baseline">
+            <div class="rounded-full bg-slate-100 w-10 h-10 flex text-slate-600 items-center justify-center font-semibold text-lg shrink-0">1</div>
+            <div class="col-span-11 flex flex-col gap-4">
+              <div class="text-2xl">Enter your Github repository URL:</div>
+              <div class="text-sm prose text-slate-300">We will crawl your repo and email you an index file you can upload directly to your GPT.</div>
+              <%= turbo_frame_tag 'form' do %>
+                <%= form_with url: action_repos_path, data: { 'turbo-frame': 'result' } do |form| %>
+                  <div class="flex w-full gap-4">
+                    <div class="grow">
+                      <div class="font-semibold mb-1">Github Repo Link</div>
+                      <%= form.text_field :repo, placeholder: 'https://github.com/tldraw/tldraw', class: 'rounded border-slate-500 bg-slate-600 text-slate-100 placeholder:text-slate-400 w-full' %>
+                    </div>
+
+                    <div>
+                      <div class="font-semibold mb-1">Email</div>
+                      <%= form.text_field :email, placeholder: 'alex@example.com', class: 'rounded border-slate-500 bg-slate-600 text-slate-100 placeholder:text-slate-400' %>
+                    </div>
+
+
+                  </div>
+                  <div class="flex items-center gap-8">
+                    <%= form.submit "Submit", class: 'border-slate-500 border p-2 rounded my-4 cursor-pointer' %>
+
+                    <%= turbo_frame_tag 'result', class: 'grow' %>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="first flex gap-8  items-baseline">
+            <div class="rounded-full bg-slate-100 w-10 h-10 flex text-slate-600 items-center justify-center font-semibold text-lg">2</div>
+            <div class="col-span-11 flex flex-col gap-4">
+              <div class="text-2xl">Upload your GPT codebase file:</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+</div>
