@@ -11,7 +11,7 @@
   </div>
   <div class="p-16">
     <div class="flex items-center flex-col gap-8 justify-center">
-      <div class="grid grid-cols-12 max-w-7xl gap-16 justify-center">
+      <div class="grid grid-cols-12 max-w-7xl gap-16 justify-center items-center">
         <div class="flex flex-col gap-8 shrink xl:col-span-5 col-span-12">
           <div class="text-6xl max-w-xl noto-serif">
             <div class="mb-2 font-semibold">
@@ -76,12 +76,28 @@
             <div class="col-span-11 flex flex-col gap-4">
               <div class="text-2xl">Upload your GPT codebase file:</div>
 
-              <div class="text-sm prose text-slate-300">You will receive an email with a link to a file <span class="font-mono p-1 bg-slate-500  rounded ">repo.md</span>. You can upload that file to OpenAI to create your custom codebase GPT.</div>
+              <div class="text-sm prose text-slate-300">You will receive an email with a link to a file <span class="font-mono p-1 bg-slate-500  rounded ">repo.md</span>. You can then <a class="text-slate-300" href="https://chat.openai.com/gpts/editor">upload that file to OpenAI</a> to create your custom codebase GPT.</div>
 
-              <%= image_tag 'screenshot.png', class: 'rounded border-slate-500 shadow pr-8' %>
+              <div class="">
+                <div class="text-sm prose text-slate-300 flex items-center gap-4 rounded border-slate-500 bg-slate-700">
+                  <%= heroicon 'question-mark-circle', variant: :outline, options: { class: 'h-6'} %>
+                  <div class="text">
+                    <div class="font-semibold text-lg">Don't have ChatGPT Plus?</div>
+                    <div class="text-slate-400 text-xs">
+                      Use the <a class="text-slate-300" href='https://platform.openai.com/playground'>OpenAI Assistants Playground</a> for free.
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+      </div>
+
+      <div class="faqs">
+
       </div>
 
 
