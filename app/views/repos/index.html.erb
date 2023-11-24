@@ -87,55 +87,67 @@
 
     <div class="faqs flex justify-center my-16">
       <div class="max-w-4xl grow flex flex-col gap-4 border-t border-slate-600 py-8 items-center text-left">
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-8">
           <div class="text-2xl font-bold">Frequently Asked Questions</div>
 
-          <div class="text-lg font-semibold text-xl">
-            How does this work?
-          </div>
-          <div class="prose text-slate-400">
-            CodebaseChat clones and crawls your repo to create a file that you can upload to OpenAI's new GPTs or Assistants. OpenAI GPTs and Assistants currently have a 20 file limit when using the retrieval features, so for now you need to upload a single indexed file to allow them to operate over large amounts of data.
-          </div>
-
-          <div class="text-lg font-semibold text-xl">
-            How should I prompt my GPT or assistant to make full use of the file?
-          </div>
-          <div class="prose text-slate-400">
-            We recommend using a prompt that tells the GPT about the contents of your codebase.
-
-            For example, at Context.ai we use the following prompt in our GPT:
-
-          </div>
-          <div class="font-mono p-2 bg-slate-700 rounded text-slate-400 max-w-prose">
-            You are a code assistant for the Git repo of Context AI. Context AI is a startup that is building product analytics software for natural language interfaces where users are interacting with LLMs. The product ingests transcripts of its customers, then provides analytics about those interactions, such as topics, sentiment analysis, languages spoken and more. The contents of the codebase are stored in repo.md, with the contents of each file under a new Markdown header.
+          <div class="question">
+            <div class="text-lg font-semibold text-xl">
+              How does this work?
+            </div>
+            <div class="prose text-slate-400">
+              CodebaseChat clones and crawls your repo to create a file that you can upload to OpenAI's new GPTs or Assistants. OpenAI GPTs and Assistants currently have a 20 file limit when using the retrieval features, so for now you need to upload a single indexed file to allow them to operate over large amounts of data.
+            </div>
           </div>
 
-          <div class="text-lg font-semibold text-xl">
-            Can I modify the code or suggest changes to CodebaseChat?
-          </div>
-          <div class="prose text-slate-400">
-            Yes! CodebaseChat is open-source and we welcome contributions. You can find the repo <a class="text-slate-300" href="https://github.com/contextco/codebasechat">here</a>.
+          <div class="question">
+            <div class="text-lg font-semibold text-xl">
+              How should I prompt my GPT or assistant to make full use of the file?
+            </div>
+            <div class="prose text-slate-400">
+              We recommend using a prompt that tells the GPT about the contents of your codebase.
+
+              For example, at Context.ai we use the following prompt in our GPT:
+
+            </div>
+            <div class="font-mono p-2 bg-slate-700 rounded text-slate-400 max-w-prose">
+              You are a code assistant for the Git repo of Context AI. Context AI is a startup that is building product analytics software for natural language interfaces where users are interacting with LLMs. The product ingests transcripts of its customers, then provides analytics about those interactions, such as topics, sentiment analysis, languages spoken and more. The contents of the codebase are stored in repo.md, with the contents of each file under a new Markdown header.
+            </div>
           </div>
 
-          <div class="text-lg font-semibold text-xl">
-            I don't have ChatGPT Plus, can I still use this?
-          </div>
-          <div class="prose text-slate-400">
-            Yes, you can instead upload the repo file in the <a class="text-slate-300" href='https://platform.openai.com/playground'>OpenAI Assistants Playground</a> and ask questions of your repo with the GPT API free tier.
-          </div>
-
-          <div class="text-lg font-semibold text-xl">
-            Do you support private repos?
-          </div>
-          <div class="prose text-slate-400">
-            We don't yet support private repos. Contact us <a class="text-slate-300" href="https://forms.gle/PZrxJLCAR1Evgshn6">here</a> if you'd like to be notified when we launch this.
+          <div class="question">
+            <div class="text-lg font-semibold text-xl">
+              Can I modify the code or suggest changes to CodebaseChat?
+            </div>
+            <div class="prose text-slate-400">
+              Yes! CodebaseChat is open-source and we welcome contributions. You can find the repo <a class="text-slate-300" href="https://github.com/contextco/codebasechat">here</a>.
+            </div>
           </div>
 
-          <div class="text-lg font-semibold text-xl">
-            I have another feature request, how can I contact you?
+          <div class="question">
+            <div class="text-lg font-semibold text-xl">
+              I don't have ChatGPT Plus, can I still use this?
+            </div>
+            <div class="prose text-slate-400">
+              Yes, you can instead upload the repo file in the <a class="text-slate-300" href='https://platform.openai.com/playground'>OpenAI Assistants Playground</a> and ask questions of your repo with the GPT API free tier.
+            </div>
           </div>
-          <div class="prose text-slate-400">
-            You can add your feature requests <a class="text-slate-300" href="https://forms.gle/PZrxJLCAR1Evgshn6">here</a>.
+
+          <div class="question">
+            <div class="text-lg font-semibold text-xl">
+              Do you support private repos?
+            </div>
+            <div class="prose text-slate-400">
+              We don't yet support private repos. Contact us <a class="text-slate-300" href="https://forms.gle/PZrxJLCAR1Evgshn6">here</a> if you'd like to be notified when we launch this.
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="text-lg font-semibold text-xl">
+              I have another feature request, how can I contact you?
+            </div>
+            <div class="prose text-slate-400">
+              You can add your feature requests <a class="text-slate-300" href="https://forms.gle/PZrxJLCAR1Evgshn6">here</a>.
+            </div>
           </div>
         </div>
       </div>

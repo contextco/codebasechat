@@ -15,3 +15,7 @@
 .highlight {
     @apply hover:text-slate-50 duration-200;
 }
+
+.question {
+    @apply flex flex-col gap-2
+}
