@@ -15,7 +15,7 @@
         <div class="flex flex-col gap-8 shrink xl:col-span-5 col-span-12">
           <div class="text-6xl max-w-xl noto-serif">
             <div class="mb-2 font-semibold">
-              Create a GPT chatbot for any Github repo in
+              Create a GPT chatbot for any GitHub repo in
             </div>
             <div class="relative inline-block group">
               <div class="relative z-10 font-semibold text-slate-800 p-2">30 seconds</div>
@@ -44,13 +44,13 @@
           <div class="first flex gap-8 items-baseline">
             <div class="rounded-full bg-slate-100 w-10 h-10 flex text-slate-600 items-center justify-center font-semibold text-lg shrink-0">1</div>
             <div class="col-span-11 flex flex-col gap-4">
-              <div class="text-2xl">Enter your Github repository URL:</div>
+              <div class="text-2xl">Enter your GitHub repository URL:</div>
               <div class="text-sm prose text-slate-300">We will crawl your repo and email you an index file you can upload directly to your GPT.</div>
               <%= turbo_frame_tag 'form' do %>
                 <%= form_with url: action_repos_path, data: { 'turbo-frame': 'result' } do |form| %>
                   <div class="flex w-full gap-4">
                     <div class="grow">
-                      <div class="font-semibold mb-1">Github Repo Link</div>
+                      <div class="font-semibold mb-1">GitHub Repo Link</div>
                       <%= form.text_field :repo, placeholder: 'https://github.com/tldraw/tldraw', class: 'rounded border-slate-500 bg-slate-600 text-slate-100 placeholder:text-slate-400 w-full' %>
                     </div>
 
