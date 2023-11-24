@@ -5,7 +5,7 @@ class Clone
 
   def initialize(repo)
     @repo = repo
-    @directory = SecureRandom.hex(RANDOM_LENGTH)
+    @directory = File.join(ENV.fetch('REPOS_BASE_PATH', Rails.root.join('tmp')), SecureRandom.hex(RANDOM_LENGTH))
   end
 
   def file_from_repo
@@ -33,25 +33,21 @@ class Clone
   end
 
   def generate_files
-    repo = Git.clone(@repo, destination)
+    repo = Git.clone(@repo, @directory)
 
     files = []
 
     # Iterate through all files in the repository
-    Dir.glob(File.join(destination, '**', '*')).each do |file|
+    Dir.glob(File.join(@directory, '**', '*')).each do |file|
       next if File.directory?(file)
       next unless allowed_extensions.include?(File.extname(file))
 
       files << FILE.new(file[RANDOM_LENGTH..], File.read(file))
     end
 
-    # FileUtils.rm_rf(@destination)
+    # FileUtils.rm_rf(@directory)
 
     files
-  end
-
-  def destination
-    File.join(Rails.root, 'tmp', @directory)
   end
 
   def allowed_extensions
