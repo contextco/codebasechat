@@ -169,6 +169,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.5-x86_64-linux)
       racc (~> 1.4)
+    pg (1.5.4)
     psych (5.1.1.1)
       stringio
     public_suffix (5.0.4)
@@ -290,6 +291,7 @@ DEPENDENCIES
   heroicon (~> 1.0)
   importmap-rails
   jbuilder
+  pg
   puma (>= 5.0)
   rails (~> 7.1.2)
   redis (>= 4.0.1)

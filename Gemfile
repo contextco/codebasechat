@@ -75,4 +75,6 @@ gem "aws-sdk-s3", "~> 1.139"
 
 gem "heroicon", "~> 1.0"
 
+gem 'pg'
+
 gem "sidekiq", "~> 7.2"
