@@ -45,7 +45,7 @@ class Clone
       files << FILE.new(file[RANDOM_LENGTH..], File.read(file))
     end
 
-    # FileUtils.rm_rf(@directory)
+    FileUtils.rm_rf(@directory)
 
     files
   end
