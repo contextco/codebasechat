@@ -5,7 +5,8 @@ class Clone
 
   def initialize(repo)
     @repo = repo
-    @directory = File.join(ENV.fetch('REPOS_BASE_PATH', Rails.root.join('tmp')), SecureRandom.hex(RANDOM_LENGTH))
+    @randomdir = SecureRandom.hex(RANDOM_LENGTH)
+    @directory = File.join(ENV.fetch('REPOS_BASE_PATH', Rails.root.join('tmp')), @randomdir)
   end
 
   def file_from_repo
@@ -42,7 +43,7 @@ class Clone
       next if File.directory?(file)
       next unless allowed_extensions.include?(File.extname(file))
 
-      files << FILE.new(file[RANDOM_LENGTH..], File.read(file))
+      files << FILE.new(file.delete_prefix(@randomdir), File.read(file))
     end
 
     FileUtils.rm_rf(@directory)
