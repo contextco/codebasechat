@@ -1,5 +1,5 @@
 <%= turbo_frame_tag 'result' do %>
-  <% if @errors.nil? %>
+  <% if @repo.valid? %>
     <div class="flex items-center gap-2">
       <%= heroicon 'check-circle', variant: :outline, options: { class: 'w-8 h-8'} %>
       <span class="">
@@ -10,5 +10,14 @@
       </span>
     </div>
   <% else %>
+    <div class="flex items-center gap-2">
+      <%= heroicon 'x-circle', variant: :outline, options: { class: 'w-8 h-8'} %>
+      <span class="">
+        <div class="font-semibold">Invalid submission.</div>
+        <div class="text-slate-400 text-xs">
+          <%= @repo.errors.full_messages.first %>
+        </div>
+      </span>
+    </div>
   <% end %>
 <% end %>

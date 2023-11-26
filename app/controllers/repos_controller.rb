@@ -4,9 +4,9 @@ class ReposController < ApplicationController
   end
 
   def action
-    @errors = nil
-
     @repo = Repo.new(url: params[:repo], email: params[:email])
+    render and return unless @repo.valid?
+
     @repo.save!
     ProcessRepoJob.perform_later(@repo)
   end
