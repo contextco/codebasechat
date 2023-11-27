@@ -3,6 +3,8 @@ _Made in London by [Context.ai](https://context.ai?utm_source=codebasechat&utm_m
 
 Create a GPT chatbot for any GitHub Repo in just 30 Seconds!
 
+Blog post: https://context.ai/post/codebasechat
+
 Have a question about this repo? We built [a GPT](https://chat.openai.com/g/g-6eEQn0yBn-chat-with-my-codebase) you can chat with:
 [![gpt-screenshot](https://github.com/contextco/codebasechat/assets/146003115/8bf289e4-4529-4e06-969d-2b710ed169d5)](https://chat.openai.com/g/g-6eEQn0yBn-chat-with-my-codebase)
 
