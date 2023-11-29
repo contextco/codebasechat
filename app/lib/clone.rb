@@ -60,6 +60,6 @@ class Clone
   end
 
   def allowed_extensions
-    %w(.py .js .html .css .java .c .cpp .cs .php .rb .go .rs .ts .swift .kt .lua .pl .sh .sql .json .md)
+    %w(.py .js .jsx .html .css .java .c .cpp .cs .php .rb .go .rs .ts .tsx .swift .kt .lua .pl .sh .sql .json .md)
   end
 end
